@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.Fmodificdorestatico.dominio;
 public class Anime {
     private String nome;
     private static int[] episodios;
-    // 0 - Bloco de inicialização é executado quando a jvm carregar classe
+    // 0 - Bloco de inicialização estatico é executado quando a jvm carregar classe
     // 1 - Alocado espaço em memoria por objeto
     // 2 - Cada atributo de classe é criado e inicializado com valor default ou o que for passado
     // 3 - Bloco de inicialização é executado
