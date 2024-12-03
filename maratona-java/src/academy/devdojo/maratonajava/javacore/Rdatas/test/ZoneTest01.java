@@ -1,8 +1,7 @@
-package academy.devdojo.maratonajava.javacore.Rdatas.text;
+package academy.devdojo.maratonajava.javacore.Rdatas.test;
 
 import java.time.*;
 import java.time.chrono.JapaneseDate;
-import java.util.Locale;
 import java.util.Map;
 
 public class ZoneTest01 {

@@ -1,9 +1,9 @@
-package academy.devdojo.maratonajava.javacore.Uregex.text;
+package academy.devdojo.maratonajava.javacore.Uregex.test;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class PatternMatcherTest05 {
+public class PatternMatcherTest02 {
     public static void main(String[] args) {
         // \d = Todos os digitos
         // \D = Tudo o que não é digito
@@ -12,9 +12,9 @@ public class PatternMatcherTest05 {
         // \w = a-z A-Z digitos
         // \W = Tudo que não diferente de \w
 
-        String regex = "([a-zA-Z0-9\\.-_])+@([a-z])+(\\.([a-z])+)+";
+        String regex = "\\w";
      //   String texto = "abaaaba";
-        String texto = "luffy@hotmail.com, 123jotaro@gmail.com, #@!zoro@mail.br, teste@gmail.com, sakura@mail";
+        String texto = "a @Sd.0i9!#aba";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(texto);
         System.out.println("texto:  "+ texto);

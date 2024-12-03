@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Rdatas.text;
+package academy.devdojo.maratonajava.javacore.Rdatas.test;
 
 import java.time.Clock;
 import java.time.LocalTime;

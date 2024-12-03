@@ -1,8 +1,6 @@
-package academy.devdojo.maratonajava.javacore.Rdatas.text;
+package academy.devdojo.maratonajava.javacore.Rdatas.test;
 
-import java.time.Duration;
 import java.time.LocalDate;
-import java.time.LocalTime;
 import java.time.Period;
 
 public class PeriodTest01 {
