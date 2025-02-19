@@ -1,8 +1,9 @@
 package academy.devdojo.maratonajava.javacore.ZZHpadroesdeprojetos.test;
 
 import academy.devdojo.maratonajava.javacore.ZZHpadroesdeprojetos.dominio.AircraftSingletonEager;
+import academy.devdojo.maratonajava.javacore.ZZHpadroesdeprojetos.dominio.AircraftSingletonLazy;
 
-public class AircraftSingletonEagerTest01 {
+public class AircraftSingletonLazyTest01 {
     public static void main(String[] args) {
         bookSeat("1A");
         bookSeat("1A");
@@ -10,7 +11,7 @@ public class AircraftSingletonEagerTest01 {
 
     private static void bookSeat(String seat){
         System.out.println(AircraftSingletonEager.getINSTANCE());
-        AircraftSingletonEager aircraftSingletonEager = AircraftSingletonEager.getINSTANCE();
+        AircraftSingletonLazy aircraftSingletonEager = AircraftSingletonLazy.getINSTANCE();
         System.out.println(aircraftSingletonEager.bookSeat(seat));
     }
 }

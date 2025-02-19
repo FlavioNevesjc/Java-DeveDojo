@@ -3,14 +3,14 @@ package academy.devdojo.maratonajava.javacore.ZZHpadroesdeprojetos.dominio;
 import java.util.HashSet;
 import java.util.Set;
 
-public final class AircraftSingletonEager {
+public final class AircraftSingletonLazy {
     // Eager initialization
 
-    private static final AircraftSingletonEager INSTANCE = new AircraftSingletonEager("787-900");
+    private static AircraftSingletonLazy INSTANCE;
     private final Set<String> availableSeats = new HashSet<>();
     private final String name;
 
-    public AircraftSingletonEager(String name) {
+    public AircraftSingletonLazy(String name) {
         this.name = name;
     }
 
@@ -19,7 +19,14 @@ public final class AircraftSingletonEager {
         availableSeats.add("1B");
     }
 
-    public static AircraftSingletonEager getINSTANCE(){
+    public static AircraftSingletonLazy getINSTANCE(){
+        if (INSTANCE == null){
+            synchronized (AircraftSingletonLazy.class){
+                if (INSTANCE == null) {
+                    INSTANCE = new AircraftSingletonLazy("787-900");
+                }
+            }
+        }
         return INSTANCE;
     }
 

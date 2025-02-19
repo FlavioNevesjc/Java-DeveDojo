@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.ZZHpadroesdeprojetos.dominio;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Aircraft {
+public final class Aircraft {
     private final Set<String> availableSeats = new HashSet<>();
     private final String name;
 
@@ -18,5 +18,9 @@ public class Aircraft {
 
     public boolean bookSeat(String seat){
         return availableSeats.remove(seat);
+    }
+
+    public String getName() {
+        return name;
     }
 }
